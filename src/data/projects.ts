@@ -1,6 +1,6 @@
 import { type ProjectCardProps } from "@/components/projects/project-card";
 import { type ProjectShowcaseListItem } from "@/components/projects/project-showcase-list";
-import { siteMetadata } from "@/data/siteMetaData.mjs";
+// import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
@@ -54,8 +54,8 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     ],
     description:
       "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/jsontree",
-    liveWebsiteHref: "https://jsontree.vercel.app",
+    sourceCodeHref: "https://github.com/konkarah/json.git",
+    liveWebsiteHref: "https://thunderous-griffin-2de336.netlify.app/",
   },
   // {
   //   name: "Kanban app",

@@ -9,7 +9,8 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
     },
     date: "May 2024 - Present",
     location: "Hybrid ",
-    description: "Spearheaded the development of an ERP suite leveraging AWS cloud infrastructure, resulting in a 10% increase in clientele, and was commended by the CTO for high standards.",
+    description:
+      "Spearheaded the development of an ERP suite leveraging AWS cloud infrastructure, resulting in a 10% increase in clientele, and was commended by the CTO for high standards.",
   },
   {
     title: "Systems Engineer",
