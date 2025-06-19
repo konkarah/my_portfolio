@@ -108,7 +108,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
     sourceCodeHref: "https://github.com/konkarah/covid.git",
-    liveWebsiteHref: "https://github.com/konkarah/covid.git",
+    liveWebsiteHref: "https://konkarah.github.io/covid/",
   },
   // {
   //   name: "Stock predictor",
