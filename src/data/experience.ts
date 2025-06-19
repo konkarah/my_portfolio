@@ -24,7 +24,7 @@ export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
       "Conceptualized and effected a P2P/Blockchain solution for seamless payments to over 1.3 million cash transfer beneficiaries cutting disbursement times by 12 days and transfer levies by 30%.",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Junior Software Engineer",
     organisation: {
       name: "Dehmans Group",
       href: "https://dehmans.com/",
