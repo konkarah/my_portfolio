@@ -43,13 +43,34 @@ export default function Navbar(props: NavbarProps) {
           </div>
         </Link>
         <nav className="hidden items-center gap-2 rounded-full px-2 py-2 shadow-md ring-1 ring-zinc-200 backdrop-blur-md dark:ring-accent/50 md:flex">
-          <ul className="flex gap-2 text-sm font-medium">
-            {props.routes.map((_link, index) => {
-              return (
-                <li
-                  key={index}
-                  className="my-3 transition-transform duration-100 hover:scale-[1.1]"
-                >
+        <ul className="flex gap-2 text-sm font-medium">
+          {props.routes.map((_link, index) => {
+            // Check if this is the Resume link (by title or href)
+            const isResume =
+              _link.title.toLowerCase() === "resume" ||
+              _link.href.toLowerCase().includes("resume");
+
+            return (
+              <li
+                key={index}
+                className="my-3 transition-transform duration-100 hover:scale-[1.1]"
+              >
+                {isResume ? (
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    className={classNames(
+                      pathName === _link.href
+                        ? "font-semibold text-background dark:hover:text-foreground"
+                        : "text-foreground",
+                      "group relative mx-3 rounded-full px-3 py-2 transition-colors duration-200",
+                    )}
+                  >
+                    {_link.title}
+                  </a>
+                ) : (
                   <Link
                     href={_link.href}
                     className={classNames(
@@ -76,10 +97,11 @@ export default function Navbar(props: NavbarProps) {
                     )}
                     {_link.title}
                   </Link>
-                </li>
-              );
-            })}
-          </ul>
+                )}
+              </li>
+            );
+          })}
+        </ul>
           <ThemeSwitch />
         </nav>
         <AnimatePresence>

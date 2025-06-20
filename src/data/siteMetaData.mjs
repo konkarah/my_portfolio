@@ -4,7 +4,7 @@ export const siteMetadata = {
   headerTitle: "Lawrence Thindi",
   description: "Frontend and Reactjs developer",
   language: "en-us",
-  theme: "light",
+  theme: "dark",
   siteName: "thindi.vercel.app",
   siteUrl: "https://thindi.vercel.app",
   siteRepo: "https://github.com/konkarah/",
